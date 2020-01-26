@@ -1,0 +1,36 @@
+ 
+  <div>
+    <nav class="navbar navbar-default navbar-static-top"
+    role="navigation" style="height: 100px">
+       
+       <ul class="nav navbar-nav">
+    
+          <a class="navbar-brand" rel="home" href="#" title="Brand">
+              <img style="height: 50px; width: 50px; margin-top: -5px;"
+                   src="/assets/2.jpeg">
+                 </a>
+           <li class="active" style="margin-left: 50px;text-align: center;">
+               <a routerLink="/home" >Home</a>
+           </li>
+           <li style="align-content: center;margin-left: 5px">
+               <a routerLink="/aboutus">About</a>
+           </li>
+           <li style="align-content: center;margin-left: 10px">
+               <a routerLink="/ourfocusarea">Our Focus Area</a>
+           </li>
+           <li style="align-content: center;margin-left: 15px">
+               <a routerLink="/contact" >Contact Us</a>
+           </li>
+           <li style="align-content: center;margin-left: 20px">
+               <a routerLink="/login"  >Login</a>
+           </li>
+           <li>
+                <button type="button" (click)="donate($event)" id="btnDonate" class="btn btn-success">Donate</button>
+                <!-- <a routerLink="/donate"></a> -->
+             </li>
+     
+       </ul>
+    </nav>
+    <hr>
+    </div>
+  

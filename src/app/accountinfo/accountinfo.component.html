@@ -1,0 +1,17 @@
+<div class="table-responsive">
+    <table class="table" border="2">
+      <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Organisation Name</th>
+          <th scope="col">Account Number</th>
+          <th scope="col">Fund Raised</th>
+      </tr>
+      <tr>
+        <td>{{accountInfo.orgId}}</td>
+        <td>{{accountInfo.name}}</td>
+        <td>{{accountInfo.accountNumber}}</td>
+        <td>{{accountInfo.accountBalance}}</td>
+     </tr>
+    </table>
+  </div>
+  <input type="button" value="GoBack" (click)="GoBack()" class="btn btn-danger">

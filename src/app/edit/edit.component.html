@@ -1,0 +1,31 @@
+<h1 style="text-align: center">Edit Profile</h1>
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="">Name</label>
+      <input [(ngModel)]="userDetails.name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Email</label>
+      <input [(ngModel)]="userDetails.email" type="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Phone</label>
+      <input [(ngModel)]="userDetails.mobileNo" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Password</label>
+      <input [(ngModel)]="userDetails.password" type="password" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="">Role</label>
+      <input [(ngModel)]="userDetails.role" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+        <button (click)="onUpdate()" class="btn btn-success">Update</button>
+        <button (click)="onCancel()" class="btn btn-danger" style="margin-left: 10px;">Cancel</button>
+    </div>
+  </div>
+</div>
