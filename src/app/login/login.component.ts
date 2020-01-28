@@ -12,7 +12,12 @@ btnDonate:any
 message:any;
 flag:boolean=false;
 
-dbuser={userId:"", name:"", email:"", password:"", address:"", mobileNo:"", role:""};
+dbuser={userId:"",
+ name:"", 
+ email:"",
+  password:"", 
+  address:"", mobileNo:"", role:""};
+
 //role:any;
 
   constructor(
@@ -69,10 +74,11 @@ dbuser={userId:"", name:"", email:"", password:"", address:"", mobileNo:"", role
       })
     }
     onCancel()    {
-      this.router.navigate['/home']
+      console.log("Inside onCancel()")
+      this.router.navigate(['/home']);
     }
     onSignUp()    {
-          this.router.navigate['/register']
+          this.router.navigate(['/register']);
         }
 
   }  

@@ -43,33 +43,31 @@
 <div class="col-md-6">
 <div class="form-group">
 <label for="">Name</label>
-<input [(ngModel)]="name" type="text" class="form-control">
+<input [(ngModel)]="userDetails.name" type="text" class="form-control">
 </div>
 <div class="form-group">
 <label for="">Email</label>
-<input [(ngModel)]="email" type="email" class="form-control">
+<input [(ngModel)]="userDetails.email" type="email" class="form-control">
 </div>
 <div class="form-group">
 <label for="">Phone</label>
-<input [(ngModel)]="phone" type="text" class="form-control">
+<input [(ngModel)]="userDetails.mobileNo" type="text" class="form-control">
 </div>
 <div class="form-group">
     <label for="category">Category</label>
     <br>
-    <select id="category" name="category"  style="width: 100%; height: 40px;">
-      <option value="Education">Education</option>
-      <option value="HealthCare">HealthCare</option>
-      <option value="Orphanage">Orphanage</option>
+    <select id="category" [(ngModel)]="orgName" (change)="changedata($event)" name="category"  style="width: 100%; height: 40px;">
+        <option *ngFor="let org of orgList" name="orgName" [value]="org.orgId" > {{org.user.name}}</option>
     </select>
 </div>
 <div class="form-group">
-<label for="">amount</label>
-<input [(ngModel)]="amount" type="number" class="form-control">
+<label for="">Amount</label>
+<input [(ngModel)]="donate.donationAmount" type="number" class="form-control">
 </div>
 
 <div class="form-group" style="align-content:center">
 
-<button (click)="onDonate()" class="btn btn-success">Donate</button>
+<button type="submit" (click)="onDonate(donate)" class="btn btn-success">Donate</button>
 </div>
 </div>
 </div>

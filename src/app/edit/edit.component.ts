@@ -20,7 +20,7 @@ id:number;
    let obRes = this.service.getUserById(this.id);
    obRes.subscribe((result)=>{
     this.userDetails = result;
-    console.log(this.userDetails);
+   // console.log(this.userDetails);
    })
 
   }
@@ -29,7 +29,7 @@ id:number;
   {
     this.route.paramMap.subscribe((data)=>{
       let obRes = this.service.editProfile(this.userDetails);
-      console.log(obRes)
+      console.log(obRes);
       obRes.subscribe((result)=>{
         console.log(result);
         alert("Profile updated successfully");

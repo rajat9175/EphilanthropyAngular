@@ -11,6 +11,7 @@ export class ManagefoundationComponent implements OnInit {
 
   foundationlist:any;
   listFoundationObj:any;
+  idToBeDeleted:any;
 
   constructor(private router:Router,private service:DataService) {
     
@@ -28,7 +29,9 @@ export class ManagefoundationComponent implements OnInit {
   {
     console.log(foundation);
     console.log(foundation.orgId);
-    this.service.manageFoundation(foundation.orgId);
+    this.idToBeDeleted = foundation.orgId;
+
+    this.service.manageFoundation(this.idToBeDeleted);
   }
   ngOnInit() {
     this.listFoundation();

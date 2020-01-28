@@ -15,6 +15,6 @@ export class PaymentComponent implements OnInit {
   ProcessPayment()
   {
     alert("Payment Done");
-    this.router.navigate(['/home'])
+    this.router.navigate(['/homeuser'])
   }
 }

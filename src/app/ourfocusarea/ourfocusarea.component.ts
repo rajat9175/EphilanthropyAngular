@@ -12,7 +12,7 @@ export class OurfocusareaComponent implements OnInit {
 Donate()
 {
  
-  this.router.navigate(['/login'])
+  this.router.navigate(['/donate'])
 }
   ngOnInit() {
   }
